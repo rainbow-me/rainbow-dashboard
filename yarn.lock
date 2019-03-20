@@ -974,6 +974,43 @@
   dependencies:
     "@types/ethereum-protocol" "*"
 
+"@walletconnect/browser@^1.0.0-beta.3":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@walletconnect/browser/-/browser-1.0.0-beta.5.tgz#d9a7b61d7ef473394379bf90d1ff55579e650adc"
+  integrity sha512-EFwiErV59QB4BHJs+7pP908iGmf+okdYKtkcvFJTf3y+iUfllnIdOmawoGoZLv9mLKaIm23pMzcAEbJlCKG7Qw==
+  dependencies:
+    "@walletconnect/core" "^1.0.0-beta.5"
+    "@walletconnect/types" "^1.0.0-beta.5"
+    "@walletconnect/utils" "^1.0.0-beta.5"
+
+"@walletconnect/core@^1.0.0-beta.5":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@walletconnect/core/-/core-1.0.0-beta.5.tgz#b12d370d25d02a94549b739e4e285527a16c500e"
+  integrity sha512-24BTfx59MagEisVQVNEAvWbpLQOfaSVi8eE0znMHYaWCj1Hi81Bj8UB7+M0PH/gAZzv4avBgNtO1DYjV3TowMA==
+  dependencies:
+    "@walletconnect/types" "^1.0.0-beta.5"
+    "@walletconnect/utils" "^1.0.0-beta.5"
+
+"@walletconnect/qrcode-modal@^1.0.0-beta.4":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@walletconnect/qrcode-modal/-/qrcode-modal-1.0.0-beta.5.tgz#b7b4d8fd1ea478cc228db2973308c770e9016094"
+  integrity sha512-H0+tGqF5ngj3Ud6+Dfdeul9+ATQBB/StzjUdZ7NJ7P45U3L/gxoq55cn2Tq8pkfTooQnFgzoGtyAMF7wHPAQzQ==
+  dependencies:
+    "@walletconnect/types" "^1.0.0-beta.5"
+    qr-image "^3.2.0"
+
+"@walletconnect/types@^1.0.0-beta.5":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@walletconnect/types/-/types-1.0.0-beta.5.tgz#db8ce9a2ecd7ee3251fc87dd968b3699ff1df85a"
+  integrity sha512-8ovwPS6Efz+ykbEOko5QxXET4cGhP7C8rI0kjRZ2bDOUZ/Ov593rWrt0s55Kd/apLwBIIVsEJLmeiAMHH3Fbtw==
+
+"@walletconnect/utils@^1.0.0-beta.5":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@walletconnect/utils/-/utils-1.0.0-beta.5.tgz#1b3e43df047eb930a5271915fbc9526ccf08432f"
+  integrity sha512-K4aZ1dX/JBdFj5DqoTndifL3jDs4kjj22HnAkegI0vwp0/bJh7gx5vQtZ78edv7RZbpdFLyIChm9kSdAHttcJQ==
+  dependencies:
+    "@walletconnect/types" "^1.0.0-beta.5"
+
 "@webassemblyjs/ast@1.7.6":
   version "1.7.6"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.6.tgz#3ef8c45b3e5e943a153a05281317474fef63e21e"
@@ -1416,7 +1453,7 @@ async-eventemitter@^0.2.2:
   dependencies:
     async "^2.4.0"
 
-"async-eventemitter@github:ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c":
+async-eventemitter@ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c:
   version "0.2.3"
   resolved "https://codeload.github.com/ahultgren/async-eventemitter/tar.gz/fa06e39e56786ba541c180061dbf2c0a5bbf951c"
   dependencies:
@@ -4166,10 +4203,6 @@ eth-lightwallet@^3.0.1:
     tweetnacl "0.13.2"
     web3 "0.20.2"
 
-eth-parse-uri@^0.6.9:
-  version "0.6.9"
-  resolved "https://registry.yarnpkg.com/eth-parse-uri/-/eth-parse-uri-0.6.9.tgz#2f481b95d062fb8ad5d92cccf10e63e5c4162344"
-
 eth-query@^2.0.2, eth-query@^2.1.0, eth-query@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/eth-query/-/eth-query-2.1.2.tgz#d6741d9000106b51510c72db92d6365456a6da5e"
@@ -6561,12 +6594,6 @@ js-sha3@^0.7.0:
 js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
-
-js-walletconnect-core@^0.7.27:
-  version "0.7.27"
-  resolved "https://registry.yarnpkg.com/js-walletconnect-core/-/js-walletconnect-core-0.7.27.tgz#e185ae277713fec69a612f43080096ba8ef59e07"
-  dependencies:
-    eth-parse-uri "^0.6.9"
 
 js-yaml@^3.12.0, js-yaml@^3.7.0, js-yaml@^3.9.0:
   version "3.12.0"
@@ -9114,6 +9141,11 @@ q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
+qr-image@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/qr-image/-/qr-image-3.2.0.tgz#9fa8295beae50c4a149cf9f909a1db464a8672e8"
+  integrity sha1-n6gpW+rlDEoUnPn5CaHbRkqGcug=
+
 qrcode@^1.2.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/qrcode/-/qrcode-1.3.2.tgz#ddb816b623236b31aa8cc2efcc04e02ac0fc7742"
@@ -11211,12 +11243,6 @@ walker@~1.0.5:
   resolved "https://registry.yarnpkg.com/walker/-/walker-1.0.7.tgz#2f7f9b8fd10d677262b18a884e28d19618e028fb"
   dependencies:
     makeerror "1.0.x"
-
-walletconnect@^0.7.25:
-  version "0.7.27"
-  resolved "https://registry.yarnpkg.com/walletconnect/-/walletconnect-0.7.27.tgz#fcba5c36b68a964c90d61cd3e2cfb3c3a5ec902d"
-  dependencies:
-    js-walletconnect-core "^0.7.27"
 
 warning@^3.0.0:
   version "3.0.0"
